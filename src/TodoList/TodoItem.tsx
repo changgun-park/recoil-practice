@@ -20,6 +20,7 @@ export default function TodoItem({ item }: { item: TodoItemInterface }) {
       ...item,
       isComplete: !item.isComplete,
     });
+    setTodoList(newList);
   };
 
   const deleteItem = () => {
